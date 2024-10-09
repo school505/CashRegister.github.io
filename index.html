@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Register</h1>
+
+        <div class="items">
+            <button class="item" data-name="Soda" data-price="1.75">Soda - $1.75</button>
+            <button class="item" data-name="Water" data-price="1.50">Water - $1.50</button>
+            <button class="item" data-name="Hot Dog" data-price="3.75">Hot Dog - $3.75</button>
+            <button class="item" data-name="Fries" data-price="2.75">Fries - $2.75</button>
+            <button class="item" data-name="Candy" data-price="2.00">Candy - $2.00</button>
+            <button class="item" data-name="Burger" data-price="4.00">Burger - $4.00</button>
+            <button class="item" data-name="Cup of Noodles" data-price="2.00">Cup of Noodles - $2.00</button>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="order-list"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+
+            <label for="payment">Amount Received: $</label>
+            <input type="number" id="payment" placeholder="Enter amount">
+            <button id="calculate-change">Calculate Change</button>
+
+            <p>Change: $<span id="change">0.00</span></p>
+
+            <button id="delete-all">Delete All</button>
+            <button id="refresh-page">Refresh</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
