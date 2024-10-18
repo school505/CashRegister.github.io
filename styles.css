@@ -105,6 +105,19 @@ li button:hover {
         width: 45%; /* Make buttons smaller */
         margin: 5px;
     }
-
+    .qr-codes {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .qr-code {
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .qr-code img {
+        border: 2px solid #003366; /* Add border color */
+        border-radius: 10px;
+    }    
     /* Other mobile-specific styles */
 }
