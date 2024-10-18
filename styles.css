@@ -36,7 +36,7 @@ h1, h2 {
 }
 
 .items {
-    display: contents;
+    display: inline;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Dynamic button arrangement */
     gap: 10px;
     margin-bottom: 20px;
