@@ -36,10 +36,9 @@ h1, h2 {
 }
 
 .items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Dynamic button arrangement */
-    gap: 10px;
-    margin-bottom: 20px;
+    display: flex; /* This overrides the grid layout */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item {
