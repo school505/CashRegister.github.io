@@ -20,7 +20,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 700px; /* adjust with screen size */
+    max-width: 700px; /* Sets max width so that it expands as items are added */
     padding: 50px; /* Extra space at the top */
     text-align: center;
     background: white;
