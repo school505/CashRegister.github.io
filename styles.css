@@ -1,16 +1,29 @@
-body {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     background-color: #f5f5f5;
+    overflow-y: scroll; /* Allow scrolling */
 }
 
 .container {
+    width: 100%;
+    max-width: 700px; /* Sets max width so that it expands as items are added */
+    padding: 50px; /* Extra space at the top */
     text-align: center;
     background: white;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #e8f0fe;
@@ -18,9 +31,13 @@ body {
 
 h1, h2 {
     color: #003366; /* Dark Blue */
+    text-align: center;
 }
 
 .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic button arrangement */
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -63,6 +80,8 @@ h1, h2 {
 ul {
     list-style-type: none;
     padding-left: 0;
+    max-height: 300px; /* Optional: set a max height */
+    overflow-y: auto;  /* Scroll if the list gets too long */
 }
 
 li {
@@ -105,6 +124,7 @@ li button:hover {
         width: 45%; /* Make buttons smaller */
         margin: 5px;
     }
+    
     .qr-codes {
         margin-top: 20px;
         text-align: center;
